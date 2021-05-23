@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
+    const {count,setCount}=props
     return (
         <div>
-            <h2>this is header</h2>
+            <h2>this is header :{count}</h2>
+            <button onClick={()=>{setCount(count+1)}}>Icrease</button>
         </div>
     );
 };
