@@ -8,8 +8,8 @@ export const Count2 = createContext()
 function App() {
   const [count,setCount] =useState(0)
   return (
-    <Count2.Provider value ={count} >
-      <Header count={count} setCount={setCount}></Header>
+    <Count2.Provider value ={[count,setCount]} >
+      <Header></Header>
       <Home count={count} />
       <Shipment/>
     </Count2.Provider>
