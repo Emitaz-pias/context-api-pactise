@@ -4,7 +4,7 @@ const Header = (props) => {
     const {count,setCount}=props
     return (
         <div>
-            <h2>this is header :{count}</h2>
+            <h1>this is header :{count}</h1>
             <button onClick={()=>{setCount(count+1)}}>Icrease</button>
         </div>
     );
